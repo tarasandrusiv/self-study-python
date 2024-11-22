@@ -7,17 +7,30 @@
 # - containing only one '@' and only one '.'
 from operator import index
 
-email = "aaa@bbb.ccc"
+email = "aaab@bbccc."
 
-comes_before = email.index('@') < email.index('.')
-start_end = (email.startswith('@') != True) and (email.endswith('.') != True)
-count = (email.count('@') == 1) and (email.count('.') == 1)
-
+count = True
+comes_before = True
 symbols_are_valid = True
-for char in email:
-    if char not in "@." and not char.isalnum():
-        symbols_are_valid = False
-        break
+start_end = True
+
+if (email.count('@') == 1) and (email.count('.') == 1):
+    comes_before = email.index('@') < email.index('.')
+    if comes_before:
+        start_end = (email.startswith('@') != True) and (email.endswith('.') != True)
+        if start_end:
+            for char in email:
+                if char not in "@." and not char.isalnum():
+                    symbols_are_valid = False
+                    break
+        else:
+            start_end = False
+    else:
+        comes_before = False
+else:
+    print(False)
+
+
 
 if comes_before == start_end == count == symbols_are_valid:
     print(True)
