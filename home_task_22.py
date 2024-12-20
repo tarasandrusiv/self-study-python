@@ -11,7 +11,7 @@ def lst2dict(lst):
     d1 = dict()
     for l in range(0, len(lst), 2):
         if l + 1 < len(lst):
-            d1[l] = lst[l + 1]
+            d1[lst[l]] = lst[l + 1]
     return d1
 
 print(lst2dict([0, 's', 'l', 3, 4, 65, 66, 87, 123]))
