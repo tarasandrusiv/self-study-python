@@ -26,7 +26,13 @@ def second_largest_number(lst):
                     continue
         if max_number == lesser_number:
             lesser_number = None
+    return lesser_number
 
-    print(max_number)
-    print(lesser_number)
-second_largest_number([2, 1, 3, 4, 5, 45, 87, 555555, 6, 77999, 0, 32, 2, 33333333333, 99999999999999])
+result = second_largest_number([2, 1, 3, 4, 5, 45, 87, 555555, 6, 77999, 0, 32, 2, 33333333333, 99999999999999])
+result1 = second_largest_number([])
+result2 = second_largest_number([1,1,1,1])
+print(result)
+print(result1)
+print(result2)
+
+
