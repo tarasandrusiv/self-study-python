@@ -1,5 +1,1 @@
-ffdfdfdfdrferfrefrtfrtfrfrtfrfrtfrfrfrfLooonoooooooooog
-small
-mediumm
-Looonoooooooooog
-gfhfhgfjghfgfjhgfjhgfjhgfjhgfgf
+Function "add" was called 5 times
