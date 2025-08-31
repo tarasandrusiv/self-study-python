@@ -15,8 +15,5 @@
 #
 # print(a.index(a.split('-')))
 
-import pytest
-def test_two_plus_two():
-   assert 2 + 2 == 5
-
-test_two_plus_two()
+lst = [1,2,3]
+print(lst)
